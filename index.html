@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+    <lord-icon id= "menu-icon" onclick="closemenu()"
+    src="https://cdn.lordicon.com/nqtddedc.json"
+    trigger="hover"
+    colors="primary:#fff"
+    style="width:25px;height:25px; margin-bottom: -5px;">
+    </lord-icon>
+                </ul>
+    <lord-icon id="menu-icon" onclick="openmenu()"
+    src="https://cdn.lordicon.com/cgzlioyf.json"
+    trigger="hover"
+    stroke="bold"
+    state="hover-loading"
+    colors="primary:#fff"
+    style="width:25px;height:25px">
+    </lord-icon>
+            </nav>
+            <div class="header-text">
+                <p> IT Recruiter </p>
+                <h1> Hi This is <span>Vignesh</span> <br> from Trichy</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------About---------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my-image-crop.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quod ut quasi quam in unde qui corrupti, rerum libero, incidunt voluptas. Possimus, debitis? Ipsam, tenetur porro. Placeat nesciunt quo voluptas odio qui dolorum voluptatibus aliquam magnam quae, consectetur itaque nihil reprehenderit quas sit dicta eveniet at distinctio delectus. Tenetur veniam facilis doloribus nulla impedit maiores temporibus saepe neque dicta eum inventore, animi earum sequi accusamus consequatur ullam dolorem maxime praesentium magni? Odio iure explicabo possimus repudiandae libero omnis reprehenderit natus fugiat aperiam aliquam voluptate provident commodi sapiente eum aut asperiores mollitia aliquid ipsum quasi, suscipit voluptatem veritatis esse? Mollitia, perferendis!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Courses')">Courses </p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span> UI/UX </span> <br> Designing web app interfaces </li>
+                        <li><span> Web development </span> <br> Web app development </li>
+                        <li><span> App development </span> <br> Building Andriod Apps  </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span> 2017 - 2020 </span> <br> Bsc Computer science at Nehru memorial college Puthanampatti </li>
+                        <li><span> 2020 - 2022 </span> <br> Msc Computer science at St.joseph's college Trichy </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span> November 2022 - Present </span> <br> IT Recruiter at 247 Hire </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Courses">
+                    <ul>
+                        <li><span> April 2024 - Present </span> <br> Full stack development at Future Wise</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------Services-------------------------------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My services </h1>
+            <div class="services-list">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg"  height="50px" viewBox="0 -960 960 960" width="50px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"/></svg>
+                    <h1> Web design </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati nesciunt eos fuga harum, nemo veniam dolorem. Voluptates, ratione omnis aspernatur amet laboriosam veniam quas suscipit dolorem qui placeat possimus?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#5f6368"><path d="M680-40v-160H280q-33 0-56.5-23.5T200-280v-400H40v-80h160v-160h80v640h640v80H760v160h-80Zm0-320v-320H360v-80h320q33 0 56.5 23.5T760-680v320h-80Z"/></svg>
+                    <h1> UI|UX design </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati nesciunt eos fuga harum, nemo veniam dolorem. Voluptates, ratione omnis aspernatur amet laboriosam veniam quas suscipit dolorem qui placeat possimus?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#5f6368"><path d="m424-312 282-282-56-56-226 226-114-114-56 56 170 170ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>                    <h1> App design </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati nesciunt eos fuga harum, nemo veniam dolorem. Voluptates, ratione omnis aspernatur amet laboriosam veniam quas suscipit dolorem qui placeat possimus?</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- --------------------------Portfolio---------------------------- -->
+
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mobile1.jpg">
+                    <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt aperiam consequuntur officia, vel aliquam pariatur cupiditate maxime perspiciatis earum ipsum labore omnis similique quae ut, tenetur, doloremque hic ducimus!</p>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-40q-33 0-56.5-23.5T160-120v-640h80v640h400v80H240Zm160-160q-33 0-56.5-23.5T320-280v-560q0-33 23.5-56.5T400-920h320q33 0 56.5 23.5T800-840v560q0 33-23.5 56.5T720-200H400Zm0-120v40h320v-40H400Zm0-80h320v-320H400v320Zm40-80v-90q0-17 11.5-28.5T480-610h86l-28-28 42-42 100 100-100 100-42-42 28-28h-66v70h-60Zm-40-320h320v-40H400v40Zm0 0v-40 40Zm0 480v40-40Z"/></svg>
+                    </a>
+                </div>
+                </div>
+                <div class="work">
+                    <img src="images/mobile2.jpg">
+                    <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt aperiam consequuntur officia, vel aliquam pariatur cupiditate maxime perspiciatis earum ipsum labore omnis similique quae ut, tenetur, doloremque hic ducimus!</p>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-40q-33 0-56.5-23.5T160-120v-640h80v640h400v80H240Zm160-160q-33 0-56.5-23.5T320-280v-560q0-33 23.5-56.5T400-920h320q33 0 56.5 23.5T800-840v560q0 33-23.5 56.5T720-200H400Zm0-120v40h320v-40H400Zm0-80h320v-320H400v320Zm40-80v-90q0-17 11.5-28.5T480-610h86l-28-28 42-42 100 100-100 100-42-42 28-28h-66v70h-60Zm-40-320h320v-40H400v40Zm0 0v-40 40Zm0 480v40-40Z"/></svg>
+                    </a>
+                </div>
+                </div>
+                <div class="work">
+                    <img src="images/mobile4.webp">
+                    <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt aperiam consequuntur officia, vel aliquam pariatur cupiditate maxime perspiciatis earum ipsum labore omnis similique quae ut, tenetur, doloremque hic ducimus!</p>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-40q-33 0-56.5-23.5T160-120v-640h80v640h400v80H240Zm160-160q-33 0-56.5-23.5T320-280v-560q0-33 23.5-56.5T400-920h320q33 0 56.5 23.5T800-840v560q0 33-23.5 56.5T720-200H400Zm0-120v40h320v-40H400Zm0-80h320v-320H400v320Zm40-80v-90q0-17 11.5-28.5T480-610h86l-28-28 42-42 100 100-100 100-42-42 28-28h-66v70h-60Zm-40-320h320v-40H400v40Zm0 0v-40 40Zm0 480v40-40Z"/></svg>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- --------------------------------Contact------------------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><lord-icon
+                        src="https://cdn.lordicon.com/aycieyht.json"
+                        trigger="in"
+                        delay="1500"
+                        stroke="bold"
+                        state="in-assembly"
+                        colors="primary:#ff004f,secondary:#ff004f"
+                        style="width:30px;height:30px;padding-top: 7px;">
+                    </lord-icon> vickybesmart10@gmail.com</p>
+                    <p><lord-icon
+                        src="https://cdn.lordicon.com/mahizafr.json"
+                        trigger="hover"
+                        stroke="bold"
+                        colors="primary:#ff004f,secondary:#ff004f"
+                        style="width:30px;height:30px; padding-top: 5px;">
+                    </lord-icon>8190869916</p>
+                    <div class="social-icons">
+                            <a href="www.facebook.com"><lord-icon
+                                src="https://cdn.lordicon.com/nlsfemdg.json"
+                                trigger="hover"
+                                style="width:25px;height:25px">
+                            </lord-icon></a>
+                            <a href="https://www.instagram.com/"> <lord-icon
+                                src="https://cdn.lordicon.com/nnfbxwtf.json"
+                                trigger="hover"
+                                style="width:25px;height:25px">
+                            </lord-icon></a>
+                            <a href="www.twitter.com"><lord-icon
+                                src="https://cdn.lordicon.com/ramibnzh.json"
+                                trigger="hover"
+                                style="width:25px;height:25px">
+                            </lord-icon></a>
+                            <a href="www.linkedin.com"><lord-icon
+                                src="https://cdn.lordicon.com/ftgjzwjn.json"
+                                trigger="hover"
+                                style="width:25px;height:25px">
+                            </lord-icon></a>
+                    </div>
+                    <a href="images/Project ideas.txt" download class="btn btn2"> Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copywrite">
+                <p> Copywrite © Vicky made with <lord-icon
+                    src="https://cdn.lordicon.com/jjoolpwc.json"
+                    trigger="morph"
+                    stroke="bold"
+                    state="morph-slider"
+                    colors="primary:#ff004f,secondary:#ff004f"
+                    style="width:20px;height:20px; margin-bottom: -4px;">
+                </lord-icon> by Great stack </p>
+        </div>
+      </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXdLjjhWENwYzPRNWHV4_tYAq1RuORcxWmqDbK6flTyIn4PgIqKllUvxj7dx_No7UF/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully !"
+                setTimeout (function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
